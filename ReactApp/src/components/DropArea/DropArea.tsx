@@ -6,7 +6,6 @@ import './DropArea.css'
 interface IState {
     dropzone: any
     imageFiles: any[]
-    
 }
 
 interface IProps{
