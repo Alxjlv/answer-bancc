@@ -1,51 +1,138 @@
-* {
-    box-sizing: border-box; 
-  }
 
-  html {
-    font-size: 30px;
-    font-family: 'Century Gothic', sans-serif;
-  }
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    margin: 0;
-    background: #bdbdbd;
-  }
-  .col-2 {
-    background: #bdbdbd;
-    flex: 1;
-  }
-  .col-1 {
-    display: flex;
-    flex-direction: column;
-    background: #e0e0e0;
-  }
-  .border{
-    padding: 50px;
-    background: #bdbdbd;
-  }
-  .input-box {
-    padding: 50px;
-    width: 50%;
-    background: white;
-    margin-right: 40px;
-  }
-  .content {
-    display: flex;
-    flex-direction: row;
-  }
-  .content > article {
-    flex: 4;
-    min-height: 60vh;
-    font-size: 10px;
-  }
-  header, footer {
-    background: #f03838;
-    height: 20vh;
-  }
-  header, footer, article, nav {
-    padding: 1em;
-  }
 
+/* 
+===========
+Main elements
+=========== 
+*/
+
+html {
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 2.5rem calc(100vw - 2.5rem);
+  min-height: 100vh;
+  margin: 0;
+  background: #fff;
+}
+
+header, footer {
+  background: #fff;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+header {
+  margin-left: 2rem;
+}
+
+/* 
+===========
+Text
+=========== 
+*/
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+  margin: initial;
+  color:black;
+}
+.HeaderSubtitle {
+  margin-top: 0.5rem;
+  color: black;
+  font-size: 0.6rem;
+}
+
+.content>article {
+  flex: 4;
+  min-height: 60vh;
+  font-size: 10px;
+}
+
+/* 
+===========
+Containers
+=========== 
+*/
+
+.PageContainer {
+  margin: 0 auto ;
+  margin-top: 0rem;
+  width: calc(100vw - 2.5rem);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.QuestionContainer {
+  width: 80vw;
+  background-color: white;
+  height: auto;
+  margin: 2rem 0 0 2rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  box-shadow: 0 14px 22px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
+}
+
+.ImageContainer {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+/* 
+===========
+Columns omgwtfbbq
+=========== 
+*/
+
+.col-2 {
+  background: #fff;
+  flex: 1;
+}
+
+.col-1 {
+
+  flex-direction: column;
+  background-color: purple;
+}
+
+/* 
+===========
+Inputs 
+=========== 
+*/
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  margin-bottom: 16px;
+  content: 'Select some files';
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 12px 24px 12px 24px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
