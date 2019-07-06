@@ -8,7 +8,7 @@ Main elements
 
 html {
   font-size: 30px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 body {
@@ -16,11 +16,11 @@ body {
   grid-template-columns: 2.5rem calc(100vw - 2.5rem);
   min-height: 100vh;
   margin: 0;
-  background: #fff;
+  background: #c8c8c8;
 }
 
 header, footer {
-  background: #fff;
+  background: #c8c8c8;
   height: 3rem;
   margin-top: 1rem;
 }
@@ -95,14 +95,14 @@ Columns omgwtfbbq
 */
 
 .col-2 {
-  background: #fff;
+  background: #c8c8c8;
   flex: 1;
 }
 
 .col-1 {
 
   flex-direction: column;
-  background-color: purple;
+  background-color: #f03838;
 }
 
 /* 
