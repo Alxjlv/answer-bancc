@@ -1,52 +1,68 @@
 <!doctype html>
 <html>
-  <head>
-      <title>Example</title>
-      <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-      <nav class="col-1"></nav>
 
-      <div class="col-2">
-        <header>Answer Upload for COMPSYS 201 2017 Exam</header>
-        <main class="content">
+<head>
+  <title>Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <nav class="col-1"></nav>
+  <div class="PageContainer">
+    <div class="col-2">
+      <header>
+        <h1>COMPSYS 201 2017 Exam
+        </h1>
+        <p class="HeaderSubtitle">Upload your answers and try it out! </p>
+      </header>
+      <main class="content">
         <article>
 
           <div class="border">
+            <div class="QuestionContainer">
+            
+              <img class="ImageContainer" src="images/Question1a.JPG" width="100%" alt="Question 1a"><br>
+              <br>
 
-            <div class="input-box">
-                <img src="images/Question1a.JPG" width = "100%"  alt="Question 1a"><br> 
-                <input id='input1' type="file" onchange="previewFile1()"><br>
-                <img id='img1' src="" height="200" alt="Image preview..."><br>
+              <br>
+
+              <input type="file" title=" "  class="custom-file-input" id='input1' onchange="previewFile1()" />
+
+              <br>
+              <img id='img1' src="" height="200" alt="Image preview..."><br>
+
             </div>
+          </div>
 
+          <div class="border">
+            <div class="QuestionContainer">
+
+              <img class="ImageContainer" src="images/Question1b.JPG" width="100%" alt="Question 1a"><br>
+              <input id='input2' class="custom-file-input"  type="file" onchange="previewFile2()"><br>
+              <img id='img2' src="" height="200" alt="Image preview..."><br>
+
+
+            </div>
           </div>
 
           <div class="border">
 
-            <div class="input-box">
-            <img src="images/Question1b.JPG" width = "100%" alt="Question 1a"><br>
-            <input id='input2' type="file" onchange="previewFile2()"><br>
-            <img id='img2' src="" height="200" alt="Image preview..."><br>
-            </div>
-
-          </div> 
-
-          <div class="border">
-
-            <div class="input-box">
-                <img src="images/Question1c.JPG" width = "100%" alt="Question 1a"><br>
-                <input id='input3' type="file" onchange="previewFile3()"><br>
-                <img id='img3' src="" height="200" alt="Image preview..."><br>
+            <div class="QuestionContainer">
+              <img class="ImageContainer" src="images/Question1c.JPG" width="100%" alt="Question 1a"><br>
+              <input id='input3' class="custom-file-input"  type="file" onchange="previewFile3()"><br>
+              <img id='img3' src="" height="200" alt="Image preview..."><br>
             </div>
 
           </div>
 
         </article>
-        </main>
-        <footer>Footer</footer>
-      </div>
-      <script src="scripts/main.js"></script>
-  </body>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
 
 </html>
