@@ -1,3 +1,4 @@
+
 import * as React from 'react'
 import ReactDropzone from 'react-dropzone'
 import './DropArea.css'
@@ -86,3 +87,4 @@ export default class DropArea extends React.Component<IProps, IState>{
         )
     }
   }
+  

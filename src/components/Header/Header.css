@@ -11,8 +11,8 @@
 }
 .headerText{
   font-size: 80px;
-  /*font-display: 'Comic Sans';*/
-  font-family: cursive; 
+  /*font-display: 'Century Gothic';*/
+  font-family: 'Century Gothic','Futura',sans-serif;
   margin: auto 0;
   font-weight: bold;
   color: #2b0707;
